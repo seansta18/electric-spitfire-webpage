@@ -13,6 +13,12 @@ app.get('/', function(req, res) {
     res.sendFile(path.join(__dirname, 'public/main.html'));
 });
 
+app.get('/tableData', function(req, res) {
+    //Get random numbers
+    //Put into array
+    //send array
+});
+
 app.use( express.json() );
 
 app.listen( process.env.PORT || 3000)
