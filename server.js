@@ -14,9 +14,9 @@ app.get('/', function(req, res) {
 });
 
 app.get('/tableData', function(req, res) {
-    //Get random numbers
-    //Put into array
-    //send array
+    var data = {batteryCharge: Math.round(Math.random()*100), pack1: Math.round(Math.random()*100), pack2: Math.round(Math.random()*100),
+    pack3: Math.round(Math.random()*100), pack4: Math.round(Math.random()*100), batteryTemp: Math.round(Math.random()*100), motorTemp: Math.round(Math.random()*100), externalTemp: Math.round(Math.random()*100)};
+    res.end(JSON.stringify(data));
 });
 
 app.use( express.json() );
