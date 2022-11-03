@@ -14,6 +14,8 @@ window.onload = function(){
         chargeTable.rows[3].cells[1].innerHTML = response.pack2 + "%";
         chargeTable.rows[4].cells[1].innerHTML = response.pack3 + "%";
         chargeTable.rows[5].cells[1].innerHTML = response.pack4 + "%";
+        chargeTable.rows[6].cells[1].innerHTML = response.pack5 + "%";
+        chargeTable.rows[7].cells[1].innerHTML = response.pack6 + "%";
 
         tempTable.rows[1].cells[1].innerHTML = response.batteryTemp + " degrees";
         tempTable.rows[2].cells[1].innerHTML = response.motorTemp + " degrees";
